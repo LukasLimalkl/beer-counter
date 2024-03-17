@@ -5,9 +5,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <h1 class="title">Ranking Semana 1</h1>
     <div class="container">
         <div class="coluna name">
-            <div class="box-title">
-              <h2>Nome</h2>
-            </div>
+            <h2>Nome</h2>
+            <div class="barra"></div>
             <div class="list-name">
                 <ul> 
                     <li>Nome 1</li>
@@ -17,9 +16,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             </div>
         </div>
         <div class="coluna beer">
-            <div class="box-title">
-              <h2>Cervejas Tomadas</h2>
-            </div>
+            <h2>Cervejas Tomadas</h2>
+            <div class="barra"></div>
             <div class="list-beer">
                 <ul> 
                     <li>3</li>
