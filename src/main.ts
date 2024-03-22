@@ -6,7 +6,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <div class="container">
         <div class="coluna">
             <div class="box-title">
-                <h2>Name</h2>
+                <h2>Nome</h2>
                 <h2>Cervejas Tomadas </h2>
             </div>
             <div class="barra"></div>
