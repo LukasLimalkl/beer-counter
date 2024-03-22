@@ -1,3 +1,4 @@
+import { listTemplate } from './listTemplate'
 import './style.css'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -12,6 +13,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <div class="barra"></div>
             <div class="list-container">
                 <ul id="ul-container"> 
+                    ${listTemplate}
                 </ul>
             </div>
         </div>

@@ -1,4 +1,5 @@
-const template = `
+export function listTemplate() {
+    const listTemplate = `
     <div class="list-box"> 
         <li>Nome 1</li>
         <li> 1</li>
@@ -9,3 +10,6 @@ const template = `
     </div>
     <div class="barra"></div>
 `
+    return listTemplate
+
+}
