@@ -11,21 +11,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             </div>
             <div class="barra"></div>
             <div class="list-container">
-                <ul> 
-                    <div class="list-box"> 
-                        <li>Nome 1</li>
-                        <li> 1</li>
-                    </div>
-                    <div class="barra"></div>
-                    <div class="list-box"> 
-                        <li>Nome 1</li>
-                        <li> 1</li>
-                    </div>
-                    <div class="barra"></div>
-                    <div class="list-box"> 
-                        <li>Nome 1</li>
-                        <li> 1</li>
-                    </div>
+                <ul id="ul-container"> 
                 </ul>
             </div>
         </div>
