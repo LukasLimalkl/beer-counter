@@ -89,8 +89,17 @@ li {
   padding: 0 10px;
 }
 
-.button-box
+.button-box{
+  display: flex;
+  justify-content: flex-end;
+  padding: 2px 10px;
+  gap: 5px;
+}
 
 .button{
   color: black;
+  width: 25px;
+  border: 1px solid purple;
+  background: none;
+
 }
