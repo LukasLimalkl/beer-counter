@@ -10,7 +10,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 <h2>Nome</h2>
                 <h2>Cervejas Tomadas </h2>
             </div>
-            <div class="barra"></div>
             <div class="list-container">
                 <ul id="ul-container"> 
                     ${listTemplate}
