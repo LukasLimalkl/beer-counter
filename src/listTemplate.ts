@@ -3,8 +3,8 @@ export const listTemplate = `
             <li>Nome 1</li>
             <li> 1</li>
             <div class="button-box">
-                <button class="button"> - </button>
-                <button class="button"> + </button>
+                <button class="button" onclick="myFunction()"> - </button>
+                <button class="button" onclick="myFunction()"> + </button>
             </div>
         </div>
         
