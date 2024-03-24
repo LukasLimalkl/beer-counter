@@ -1,11 +1,10 @@
-let counter: number = 0; 
+import { getCounter, incrementCounter } from "./counter";
 
-export function plusCounter() {
-    counter++
-    const listCounter = document.querySelector("#counterElement");
+export function plusCounter(): void {
+    incrementCounter();
+    const listCounter: HTMLElement | null = document.querySelector("#counterElement");
 
     if (listCounter) {
-        listCounter.innerHTML = counter.toString();
-    
-}
+        listCounter.innerHTML = getCounter().toString();
+    }
 }
