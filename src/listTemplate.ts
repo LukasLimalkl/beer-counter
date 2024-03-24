@@ -1,3 +1,13 @@
+import { plusCounter } from "./counter";
+
+document.addEventListener("DOMContentLoaded", () => {
+    const increaseButton: HTMLButtonElement | null = document.querySelector("#increaseButton");
+
+    if (increaseButton) {
+        increaseButton.addEventListener("click", plusCounter);
+    }
+});
+
 export const listTemplate = `
     <div class="list-box"> 
         <li>Nome 1</li>
