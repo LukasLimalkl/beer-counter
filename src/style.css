@@ -27,6 +27,19 @@ body{
   padding: 10px 0;
 }
 
+.button-box{
+  display: flex;
+  justify-content: center;
+}
+
+.button-title{
+  color: black;
+  width: 50px;
+  background: none;
+  color: #FFF;
+  border: 1px solid purple;
+}
+
 .title {
   text-align: center;
 }
@@ -43,13 +56,6 @@ body{
   width: 100%;
   max-width: 500px;
   height: 100%;
-}
-
-.button-title{
-  display: flex;
-  justify-content: flex-end;
-  color: black;
-  margin: auto;
 }
 
 .box-title{
