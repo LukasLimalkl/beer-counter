@@ -1,4 +1,4 @@
-import { getCounter, incrementCounter } from "./counter";
+import { getCounter, incrementCounter } from "../counter";
 
 export function plusCounter(): void {
     incrementCounter();

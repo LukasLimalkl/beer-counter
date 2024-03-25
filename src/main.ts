@@ -1,6 +1,6 @@
+import { lessTitleCounter, plusTitleCounter } from './counters/titleCounter/titleCounter';
 import { listTemplate } from './listTemplate';
 import './style.css';
-import { lessTitleCounter, plusTitleCounter } from './titleCounter';
 
 document.addEventListener("DOMContentLoaded", () => {
     const increaseButton: HTMLButtonElement | null = document.querySelector("#plusTitleCounter");

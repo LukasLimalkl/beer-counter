@@ -1,5 +1,5 @@
-import { lessCounter } from "./lessCounter";
-import { plusCounter } from "./plusCounter";
+import { lessCounter } from "./counters/listCounter/lessCounter";
+import { plusCounter } from "./counters/listCounter/plusCounter";
 
 document.addEventListener("DOMContentLoaded", () => {
     const increaseButton: HTMLButtonElement | null = document.querySelector("#increaseButton");

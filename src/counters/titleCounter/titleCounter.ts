@@ -1,4 +1,4 @@
-import { decrementCounter, getCounter, incrementCounter } from "./counter";
+import { decrementCounter, getCounter, incrementCounter } from "../counter";
 
 export function plusTitleCounter(): void {
     incrementCounter();
