@@ -1,18 +1,29 @@
 import { listTemplate } from './listTemplate';
 import './style.css';
-import { titleCounter } from './titleCounter';
+import { lessTitleCounter, plusTitleCounter } from './titleCounter';
 
 document.addEventListener("DOMContentLoaded", () => {
-    const increaseButton: HTMLButtonElement | null = document.querySelector("#titleCounter");
+    const increaseButton: HTMLButtonElement | null = document.querySelector("#plusTitleCounter");
 
     if (increaseButton) {
-        increaseButton.addEventListener("click", titleCounter);
+        increaseButton.addEventListener("click", plusTitleCounter);
+    }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const increaseButton: HTMLButtonElement | null = document.querySelector("#lessTitleCounter");
+
+    if (increaseButton) {
+        increaseButton.addEventListener("click", lessTitleCounter);
     }
 });
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div class="main-container">
-    <button class="button-title" id="titleCounter"> Outra Semana </button>
+    <div class="main-title-box">
+        <button class="button-title" id="plusTitleCounter"> + </button>
+        <button class="button-title" id="lessTitleCounter"> - </button>
+    </div>
     <div class="main-title"> 
         <h1 class="title" >Ranking Semana <h1 id="counterTitle">1</h1> </h1>
     </div>
