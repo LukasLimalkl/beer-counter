@@ -20,12 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div class="main-container">
-    <span class="icon-span">
-        <img src="../assets/reset.png" alt="Minha Figura" class="reset-icon">
-    </span>
-    <div class="button-box">
+    
+    <div class="button-title-box">
         <button class="button-title" id="lessTitleCounter"> - </button>
         <button class="button-title" id="plusTitleCounter"> + </button>
+        <span class="icon-span">
+            <img src="../assets/reset.png" alt="Minha Figura" class="reset-icon">
+        </span>
     </div>
     <div class="main-title"> 
         <h1 class="title" >Ranking Semana <h1 id="counterTitle">1</h1> </h1>

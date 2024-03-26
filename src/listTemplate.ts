@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
+ document.addEventListener("DOMContentLoaded", () => {
     const decreaseButton: HTMLButtonElement | null = document.querySelector("#decreaseButton");
 
     if (decreaseButton) {

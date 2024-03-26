@@ -27,9 +27,10 @@ body{
   padding: 10px 0;
 }
 
-.button-box{
+.button-title-box{
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
 
 .button-title{
@@ -41,12 +42,14 @@ body{
   cursor: pointer;
 }
 
+.icon-span{
+  cursor: pointer;
+}
+
 .reset-icon{
   width: 20px;
   height: 20px;
 }
-
-
 
 .title {
   text-align: center;
