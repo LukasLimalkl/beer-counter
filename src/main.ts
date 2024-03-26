@@ -20,6 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div class="main-container">
+    <span class="icon-span">
+        <img src="../assets/reset.svg" alt="Minha Figura" class="reset-icon">
+    </span>
     <div class="button-box">
         <button class="button-title" id="lessTitleCounter"> - </button>
         <button class="button-title" id="plusTitleCounter"> + </button>
