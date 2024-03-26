@@ -38,7 +38,15 @@ body{
   background: none;
   color: #FFF;
   border: 1px solid purple;
+  cursor: pointer;
 }
+
+.reset-icon{
+  background-color: #FFF;
+  width: 100px;
+  height: 20px;
+}
+
 
 .title {
   text-align: center;
