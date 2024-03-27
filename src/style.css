@@ -135,3 +135,19 @@ li {
   background: none;
   cursor: pointer;
 }
+
+.show-input{
+  background: none;
+  width: 200px;
+}
+
+.show-box{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.input-box{
+  display: flex;
+  flex-direction: row;
+}
