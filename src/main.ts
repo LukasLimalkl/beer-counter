@@ -18,13 +18,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+document.addEventListener("DOMContentLoaded",() => {
+    const resetSpan: HTMLSpanElement | null = document.querySelector("#iconReset");
+
+    if (resetSpan) {
+        resetSpan.addEventListener("click", () =>{
+            window.location.reload();        
+        });
+    }
+})
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div class="main-container">
     
     <div class="button-title-box">
         <button class="button-title" id="lessTitleCounter"> - </button>
         <button class="button-title" id="plusTitleCounter"> + </button>
-        <span class="icon-span">
+        <span class="icon-span" id="iconReset">
             <img src="../assets/reset.png" alt="Minha Figura" class="reset-icon">
         </span>
     </div>
