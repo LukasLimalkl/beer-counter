@@ -1,5 +1,5 @@
-import { inputTemplate } from './components/inputTemplate';
 import { listTemplate } from './components/listTemplate';
+import { showInput } from './components/showInput';
 import { lessTitleCounter, plusTitleCounter } from './counters/titleCounter/titleCounter';
 import './style.css';
 
@@ -52,7 +52,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 <ul id="ul-container"> 
                     ${listTemplate}
                 </ul>
-                ${inputTemplate}
+                ${showInput}
             </div>
         </div>
     </div>
