@@ -1,6 +1,6 @@
+import { inputTemplate } from './components/inputTemplate';
+import { listTemplate } from './components/listTemplate';
 import { lessTitleCounter, plusTitleCounter } from './counters/titleCounter/titleCounter';
-import { inputTemplate } from './inputTemplate';
-import { listTemplate } from './listTemplate';
 import './style.css';
 
 document.addEventListener("DOMContentLoaded", () => {
