@@ -51,6 +51,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 <ul id="ul-container"> 
                     ${listTemplate}
                 </ul>
+                <div class="input-box">
+                    <label>Click me <input type="text" id="User" name="Name" /></label>
+                </div>
             </div>
         </div>
     </div>
