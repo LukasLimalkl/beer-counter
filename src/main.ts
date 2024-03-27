@@ -1,4 +1,5 @@
 import { lessTitleCounter, plusTitleCounter } from './counters/titleCounter/titleCounter';
+import { inputTemplate } from './inputTemplate';
 import { listTemplate } from './listTemplate';
 import './style.css';
 
@@ -51,9 +52,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 <ul id="ul-container"> 
                     ${listTemplate}
                 </ul>
-                <div class="input-box">
-                    <label>Click me <input type="text" id="User" name="Name" /></label>
-                </div>
+                ${inputTemplate}
             </div>
         </div>
     </div>
