@@ -1,15 +1,13 @@
 import { inputTemplate } from "./inputTemplate";
 
+const input = document.querySelector("#User") as HTMLInputElement
 
 
-function ButtonAction (e: Event) {
+function ButtonAction () {
+    if (!input) return
+    console.log("passou do if")
+    input.style.display = "flex";
 
-    const input = document.querySelector("#User") as HTMLInputElement
-
-    if (input){
-        console.log("botao sendo pressionado", e)
-        input.style.display = "flex"
-    }
 
 }
 
