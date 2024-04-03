@@ -1,19 +1,28 @@
 import { inputTemplate } from "./inputTemplate";
 
-const input = document.querySelector("#User") as HTMLInputElement
 
 
-function ButtonAction () {
-    if (!input) return
+ function ButtonAction () {
+    const addClient = document.querySelector("#input-box") as HTMLDivElement
+    if (!addClient) return
+    addClient.style.display = "flex";
     console.log("passou do if")
-    input.style.display = "flex";
-
 
 }
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const showInputButton: HTMLButtonElement | null = document.querySelector("#showInputButton");
+
+    if (showInputButton) {
+        showInputButton.addEventListener("click", ButtonAction);
+    }
+});
+
+
 export const showInput = `
     <div class="show-box">
-        <button onclick(${ ButtonAction()}) class="show-input"> Add </button>
+        <button class="show-input" id="showInputButton"> Add </button>
         ${inputTemplate}
     </div>
 `
