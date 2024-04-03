@@ -1,21 +1,23 @@
-import { lessCounter } from "../counters/listCounter/lessCounter";
-import { plusCounter } from "../counters/listCounter/plusCounter";
+import { lessCounter } from '../counters/listCounter/lessCounter'
+import { plusCounter } from '../counters/listCounter/plusCounter'
 
-document.addEventListener("DOMContentLoaded", () => {
-    const increaseButton: HTMLButtonElement | null = document.querySelector("#increaseButton");
+document.addEventListener('DOMContentLoaded', () => {
+  const increaseButton: HTMLButtonElement | null =
+    document.querySelector('#increaseButton')
 
-    if (increaseButton) {
-        increaseButton.addEventListener("click", plusCounter);
-    }
-});
+  if (increaseButton) {
+    increaseButton.addEventListener('click', plusCounter)
+  }
+})
 
- document.addEventListener("DOMContentLoaded", () => {
-    const decreaseButton: HTMLButtonElement | null = document.querySelector("#decreaseButton");
+document.addEventListener('DOMContentLoaded', () => {
+  const decreaseButton: HTMLButtonElement | null =
+    document.querySelector('#decreaseButton')
 
-    if (decreaseButton) {
-        decreaseButton.addEventListener("click", lessCounter);
-    }
-});
+  if (decreaseButton) {
+    decreaseButton.addEventListener('click', lessCounter)
+  }
+})
 
 export const listTemplate = `
     <div class="list-box"> 
@@ -26,5 +28,4 @@ export const listTemplate = `
             <button id="increaseButton" class="button"> + </button>
         </div>
     </div>
-`;
-
+`

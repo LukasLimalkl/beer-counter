@@ -1,32 +1,37 @@
-import { listTemplate } from './components/listTemplate';
-import { showInput } from './components/showInput';
-import { lessTitleCounter, plusTitleCounter } from './counters/titleCounter/titleCounter';
-import './style.css';
+import { listTemplate } from './components/listTemplate'
+import { showInput } from './components/showInput'
+import {
+  lessTitleCounter,
+  plusTitleCounter
+} from './counters/titleCounter/titleCounter'
+import './style.css'
 
-document.addEventListener("DOMContentLoaded", () => {
-    const increaseButton: HTMLButtonElement | null = document.querySelector("#plusTitleCounter");
+document.addEventListener('DOMContentLoaded', () => {
+  const increaseButton: HTMLButtonElement | null =
+    document.querySelector('#plusTitleCounter')
 
-    if (increaseButton) {
-        increaseButton.addEventListener("click", plusTitleCounter);
-    }
-});
+  if (increaseButton) {
+    increaseButton.addEventListener('click', plusTitleCounter)
+  }
+})
 
-document.addEventListener("DOMContentLoaded", () => {
-    const increaseButton: HTMLButtonElement | null = document.querySelector("#lessTitleCounter");
+document.addEventListener('DOMContentLoaded', () => {
+  const increaseButton: HTMLButtonElement | null =
+    document.querySelector('#lessTitleCounter')
 
-    if (increaseButton) {
-        increaseButton.addEventListener("click", lessTitleCounter);
-    }
-});
+  if (increaseButton) {
+    increaseButton.addEventListener('click', lessTitleCounter)
+  }
+})
 
-document.addEventListener("DOMContentLoaded",() => {
-    const resetSpan: HTMLSpanElement | null = document.querySelector("#iconReset");
+document.addEventListener('DOMContentLoaded', () => {
+  const resetSpan: HTMLSpanElement | null = document.querySelector('#iconReset')
 
-    if (resetSpan) {
-        resetSpan.addEventListener("click", () =>{
-            window.location.reload();        
-        });
-    }
+  if (resetSpan) {
+    resetSpan.addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
 })
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -58,6 +63,3 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </div>
   </div>
 `
-
-
-

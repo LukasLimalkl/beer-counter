@@ -1,13 +1,13 @@
-let counter: number = 0;
+let counter: number = 0
 
 export function getCounter(): number {
-    return counter;
+  return counter
 }
 
 export function incrementCounter(): void {
-    counter++;
+  counter++
 }
 
 export function decrementCounter(): void {
-    counter--;
+  counter--
 }
