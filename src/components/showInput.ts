@@ -1,15 +1,10 @@
-import { inputTemplate } from "./inputTemplate";
+const addClient = document.querySelector(".input-box") as HTMLDivElement
 
-
-
- function ButtonAction () {
-    const addClient = document.querySelector("#input-box") as HTMLDivElement
-    if (!addClient) return
+ function ButtonAction() {
+    if (!addClient) return;
     addClient.style.display = "flex";
-    console.log("passou do if")
-
+    console.log("passou do if");
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
     const showInputButton: HTMLButtonElement | null = document.querySelector("#showInputButton");
@@ -23,6 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
 export const showInput = `
     <div class="show-box">
         <button class="show-input" id="showInputButton"> Add </button>
-        ${inputTemplate}
+        <div class="input-box" style="display: none;">
+            <label>Click me <input type="text" id="User" name="Name" class="input-client" /></label>
+        </div>
     </div>
 `
