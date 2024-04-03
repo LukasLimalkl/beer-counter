@@ -3,7 +3,6 @@ const addClient = document.querySelector(".input-box") as HTMLDivElement
  function ButtonAction() {
     if (!addClient) return;
     addClient.style.display = "flex";
-    console.log("passou do if");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
