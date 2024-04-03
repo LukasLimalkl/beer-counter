@@ -10,9 +10,7 @@
     "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
-  "rules": {
-    "comma-dangle": ["error", "always"]
-  },
+  "rules": {},
   "env": {
     "browser": true,
     "es2021": true
