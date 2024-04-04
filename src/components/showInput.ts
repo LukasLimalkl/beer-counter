@@ -20,12 +20,25 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const items = [];
+  const items: Array<string> = [];
 
-  const inputValue = document.querySelector('.input-client');
-  items.push(inputValue);
+  const inputValue = document.querySelector(
+    '.input-client'
+  ) as HTMLInputElement | null;
+  const addClientButton = document.querySelector('.add-button');
 
-  console.log(items);
+  function AddName() {
+    if (!inputValue || !inputValue.value.trim()) return;
+    const value = inputValue.value.trim();
+
+    items.push(value);
+    console.log(items);
+    inputValue.value = ''; // Limpa o campo de entrada após adicionar o cliente
+  }
+
+  if (addClientButton) {
+    addClientButton.addEventListener('click', AddName);
+  }
 });
 
 export const showInput = `
