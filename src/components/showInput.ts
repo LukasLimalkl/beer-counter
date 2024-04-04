@@ -2,11 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const addClient: HTMLElement | null = document.getElementById('hide')
 
   function ButtonAction() {
-    console.log(addClient)
     if (!addClient) return
-    console.log('dps')
 
-    addClient.style.display = 'flex'
+    if (addClient.style.display == 'flex') {
+      addClient.style.display = 'none'
+    } else {
+      addClient.style.display = 'flex'
+    }
   }
 
   const showInputButton: HTMLButtonElement | null =
@@ -19,9 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 export const showInput = `
     <div class="show-box">
-        <button class="show-input" id="showInputButton"> Add </button>
+        <button class="show-input" id="showInputButton"> Novo Jogador </button>
         <div class="input-box" id="hide" >
-            <label>Click me <input type="text" id="User" name="Name" class="input-client" /></label>
+             <input type="text" id="User" name="Name" class="input-client" />
+             <button class="add-button"> Adicionar nome </button>
         </div>
     </div>
 `

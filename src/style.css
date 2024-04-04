@@ -155,7 +155,7 @@ li {
   height: 25px;
   color: #283639;
   background: white;
-  width: 70px;
+  width: 150px;
   font-weight: bold;
   letter-spacing: 0.5px;
   border: 1px solid #fbfbfd;
@@ -163,9 +163,16 @@ li {
   border-radius: 10px;
 }
 
+.add-button {
+  width: 100px;
+}
+
 .show-box {
   width: 300px;
   padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .input-box {
