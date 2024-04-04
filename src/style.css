@@ -171,6 +171,7 @@ li {
   background: white;
   border: 1px solid #fbfbfd;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .show-box {
