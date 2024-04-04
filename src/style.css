@@ -164,7 +164,10 @@ li {
 }
 
 .add-button {
-  width: 100px;
+  width: 150px;
+  height: 25px;
+  color: black;
+  font-weight: bold;
 }
 
 .show-box {
@@ -175,6 +178,11 @@ li {
   gap: 10px;
 }
 
+.input-client {
+  height: 25px;
+}
+
 .input-box {
   display: none;
+  flex-direction: column;
 }
