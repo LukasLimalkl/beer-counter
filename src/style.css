@@ -168,6 +168,9 @@ li {
   height: 25px;
   color: black;
   font-weight: bold;
+  background: white;
+  border: 1px solid #fbfbfd;
+  border-radius: 10px;
 }
 
 .show-box {
@@ -180,9 +183,16 @@ li {
 
 .input-client {
   height: 25px;
+  color: black;
+  border: 1px solid purple;
+  border-radius: 10px;
+  outline: 0;
+  font-weight: bold;
+  padding: 10px;
 }
 
 .input-box {
   display: none;
   flex-direction: column;
+  gap: 5px;
 }
