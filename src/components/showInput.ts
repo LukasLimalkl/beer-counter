@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const items: Array<string> = [];
+export const items: Array<string> = [];
 
+document.addEventListener('DOMContentLoaded', () => {
   const inputValue = document.querySelector(
     '.input-client'
   ) as HTMLInputElement | null;
@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const value = inputValue.value.trim();
 
     items.push(value);
-    console.log(items);
     inputValue.value = ''; // Limpa o campo de entrada após adicionar o cliente
   }
 
