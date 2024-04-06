@@ -1,38 +1,38 @@
-import { listTemplate } from './components/listTemplate'
-import { showInput } from './components/showInput'
+import { listContainer } from './components/showInput';
 import {
   lessTitleCounter,
   plusTitleCounter
-} from './counters/titleCounter/titleCounter'
-import './style.css'
+} from './counters/titleCounter/titleCounter';
+import './style.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   const increaseButton: HTMLButtonElement | null =
-    document.querySelector('#plusTitleCounter')
+    document.querySelector('#plusTitleCounter');
 
   if (increaseButton) {
-    increaseButton.addEventListener('click', plusTitleCounter)
+    increaseButton.addEventListener('click', plusTitleCounter);
   }
-})
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   const increaseButton: HTMLButtonElement | null =
-    document.querySelector('#lessTitleCounter')
+    document.querySelector('#lessTitleCounter');
 
   if (increaseButton) {
-    increaseButton.addEventListener('click', lessTitleCounter)
+    increaseButton.addEventListener('click', lessTitleCounter);
   }
-})
+});
 
 document.addEventListener('DOMContentLoaded', () => {
-  const resetSpan: HTMLSpanElement | null = document.querySelector('#iconReset')
+  const resetSpan: HTMLSpanElement | null =
+    document.querySelector('#iconReset');
 
   if (resetSpan) {
     resetSpan.addEventListener('click', () => {
-      window.location.reload()
-    })
+      window.location.reload();
+    });
   }
-})
+});
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div class="main-container">
@@ -53,13 +53,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 <h2>Nome</h2>
                 <h2>Cervejas Tomadas </h2>
             </div>
-            <div class="list-container">
-                <ul id="ul-container"> 
-                    ${listTemplate}
-                </ul>
-                ${showInput}
-            </div>
+            ${listContainer}
         </div>
     </div>
   </div>
-`
+`;
